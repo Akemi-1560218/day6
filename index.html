@@ -193,4 +193,119 @@ if (actual === expected) {
 // さらにテストを書いて、コードが正しいことを確認してください。
 
 
+レビュー
+1 関数 isLongerThan を宣言してください。
+  /**
+ * @param {string} ??? - テストの対象となる文字列
+ * @param {number} ??? - 確認したい文字数
+ * @returns {any} 与えられた文字列の長さが確認したい文字数より長いかどうか
+ */
+// ここにコードを書きましょう
+
+actual = isLongerThan("three", 3);
+expected = true;
+
+if (actual === expected) {
+  console.log("OK! Test PASSED.");
+} else {
+  console.error("Test FAILED. Try again!");
+  console.log("    actual: ", actual);
+  console.log("  expected: ", expected);
+}
+
+actual = isLongerThan("three", 5);
+expected = false;
+
+if (actual === expected) {
+  console.log("OK! Test PASSED.");
+} else {
+  console.error("Test FAILED. Try again!");
+  console.log("    actual: ", actual);
+  console.log("  expected: ", expected);
+}
+
+actual = isLongerThan(3, 5);
+expected = "Invalid input.";
+
+if (actual === expected) {
+  console.log("OK! Test PASSED.");
+} else {
+  console.error("Test FAILED. Try again!");
+  console.log("    actual: ", actual);
+  console.log("  expected: ", expected);
+}
+
+
+2 関数 isOddWithoutIf を宣言してください。ただし、if キーワードを使ってはいけません。
+  （今までにすでにこれと似たような関数を作成したかもしれませんが、過去のコードは見ずにもう一度自分で作成してみましょう。）
+  入力値の型チェックは必ず行ってください。
+/**
+ * @param {number} ??? - テストの対象となる数値
+ * @returns {boolean} 与えられた数値が奇数かどうかを表すブーリアン
+ */
+// ここにコードを書きましょう
+
+actual = isOddWithoutIf(3);
+expected = true;
+
+if (actual === expected) {
+  console.log("OK! Test PASSED.");
+} else {
+  console.error("Test FAILED. Try again!");
+  console.log("    actual: ", actual);
+  console.log("  expected: ", expected);
+}
+
+actual = isOddWithoutIf(4);
+expected = false;
+
+if (actual === expected) {
+  console.log("OK! Test PASSED.");
+} else {
+  console.error("Test FAILED. Try again!");
+  console.log("    actual: ", actual);
+  console.log("  expected: ", expected);
+}
+
+
+3 関数 getSimpleNumberName を宣言してください。
+  /**
+ * @param {number} ??? - 数値（0-10）。その名前がアルファベットの形で返ることになる
+ * @returns {"zero"|"one"|"two"|"three"|"four"|"five"|"six"|"seven"|"eight"|"nine"|"ten"} 与えられた数値をアルファベットで記した時の名前
+ */
+// ここにコードを書きましょう
+
+actual = getSimpleNumberName(0);
+expected = "zero";
+
+if (actual === expected) {
+  console.log("OK! Test PASSED.");
+} else {
+  console.error("Test FAILED. Try again!");
+  console.log("    actual: ", actual);
+  console.log("  expected: ", expected);
+}
+
+// さらにテストを書いて、コードが正しいことを確認してください
+
+
+4 関数 getPolygonName を宣言してください
+  /**
+ * @param {number} ??? - 正多角形の辺の数 (3-8)
+ * @returns {"triangle"|"square"|"pentagon"|"hexagon"|"heptagon"|"octagon"} 与えられた数の辺を持つ正多角形の英語名
+ */
+// ここにコードを書きましょう
+
+actual = getPolygonName(3);
+expected = "triangle";
+
+if (actual === expected) {
+  console.log("OK! Test PASSED.");
+} else {
+  console.error("Test FAILED. Try again!");
+  console.log("    actual: ", actual);
+  console.log("  expected: ", expected);
+}
+
+// さらにテストを書いて、コードが正しいことを確認してください
   
